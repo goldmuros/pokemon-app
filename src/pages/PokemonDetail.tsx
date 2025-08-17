@@ -161,73 +161,6 @@ const PokemonDetail = (): ReactNode => {
               </Typography>
 
               <PokemonStats stats={pokemon?.stats ?? ({} as PokemonDataStats)} />
-              {/* <Stack spacing={2}>
-                <Box>
-                  <Typography variant='body2' sx={{ fontWeight: 'bold', mb: 1 }}>
-                    HP: {pokemon?.stats.hp}
-                  </Typography>
-                  <LinearProgress
-                    variant='determinate'
-                    value={pokemon?.stats.hp}
-                    sx={{ height: 8, borderRadius: 4 }}
-                  />
-                </Box>
-
-                <Box>
-                  <Typography variant='body2' sx={{ fontWeight: 'bold', mb: 1 }}>
-                    Attack: {pokemon?.stats.attack}
-                  </Typography>
-                  <LinearProgress
-                    variant='determinate'
-                    value={pokemon?.stats.attack}
-                    sx={{ height: 8, borderRadius: 4 }}
-                  />
-                </Box>
-
-                <Box>
-                  <Typography variant='body2' sx={{ fontWeight: 'bold', mb: 1 }}>
-                    Defense: {pokemon?.stats.defense}
-                  </Typography>
-                  <LinearProgress
-                    variant='determinate'
-                    value={pokemon?.stats.defense}
-                    sx={{ height: 8, borderRadius: 4 }}
-                  />
-                </Box>
-
-                <Box>
-                  <Typography variant='body2' sx={{ fontWeight: 'bold', mb: 1 }}>
-                    Speed: {pokemon?.stats.speed}
-                  </Typography>
-                  <LinearProgress
-                    variant='determinate'
-                    value={pokemon?.stats.speed}
-                    sx={{ height: 8, borderRadius: 4 }}
-                  />
-                </Box>
-
-                <Box>
-                  <Typography variant='body2' sx={{ fontWeight: 'bold', mb: 1 }}>
-                    Special Attack: {pokemon?.stats.specialAttack}
-                  </Typography>
-                  <LinearProgress
-                    variant='determinate'
-                    value={pokemon?.stats.specialAttack}
-                    sx={{ height: 8, borderRadius: 4 }}
-                  />
-                </Box>
-
-                <Box>
-                  <Typography variant='body2' sx={{ fontWeight: 'bold', mb: 1 }}>
-                    Special Defense: {pokemon?.stats.specialDefense}
-                  </Typography>
-                  <LinearProgress
-                    variant='determinate'
-                    value={pokemon?.stats.specialDefense}
-                    sx={{ height: 8, borderRadius: 4 }}
-                  />
-                </Box>
-              </Stack> */}
             </Paper>
           </Grid>
           <Grid size={{ xs: 12 }}>
@@ -277,12 +210,9 @@ const PokemonDetail = (): ReactNode => {
         sx={{
           mt: 3,
           py: 3,
-          borderTop: '1px solid',
-          borderColor: 'divider',
           backgroundColor: 'background.paper',
           display: 'flex',
           justifyContent: 'space-around',
-          flexShrink: 0, // Evita que el footer se contraiga
         }}
       >
         <Button

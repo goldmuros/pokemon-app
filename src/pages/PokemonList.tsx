@@ -61,7 +61,7 @@ const ROW_PER_PAGE = [5, 10, 20, 50];
 
 const PokemonList = (): ReactNode => {
   const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(ROW_PER_PAGE[1]); // Default 10
+  const [rowsPerPage, setRowsPerPage] = useState(ROW_PER_PAGE[1]);
 
   const theme = useTheme();
   const navigate = useNavigate();

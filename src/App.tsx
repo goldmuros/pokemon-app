@@ -19,7 +19,7 @@ const ROUTES = [
     element: <PokemonFavorites />,
   },
   {
-    path: '*', // Ruta catch-all para debug
+    path: '*',
     element: <NoPage />,
   },
 ];

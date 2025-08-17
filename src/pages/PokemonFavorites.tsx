@@ -54,7 +54,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
 }));
 
 const PokemonFavorites = (): ReactNode => {
-  const [pokemonsData, setPokemonsData] = useState<PokemonData[]>();
+  const [pokemonsData, setPokemonsData] = useState<PokemonData[]>([]);
   const [expandedCards, setExpandedCards] = useState<{ [key: number]: boolean }>({});
 
   const navigate = useNavigate();
@@ -118,7 +118,7 @@ const PokemonFavorites = (): ReactNode => {
             : `${pokemonsData?.length} Pokemon${pokemonsData && pokemonsData.length > 1 ? 's' : ''} in your colection`}
         </Typography>
       </Box>
-      {pokemonsData?.length === 0 && (
+      {pokemonsData.length === 0 && (
         <Paper
           elevation={1}
           sx={{
@@ -136,7 +136,7 @@ const PokemonFavorites = (): ReactNode => {
           </Typography>
         </Paper>
       )}
-      {pokemonsData && pokemonsData.length > 0 && (
+      {pokemonsData.length > 0 && (
         <Box
           sx={{
             display: 'grid',
@@ -273,8 +273,6 @@ const PokemonFavorites = (): ReactNode => {
         component='footer'
         sx={{
           backgroundColor: 'background.paper',
-          borderColor: 'divider',
-          borderTop: '1px solid',
           mt: 6,
           py: 3,
           textAlign: 'center',
