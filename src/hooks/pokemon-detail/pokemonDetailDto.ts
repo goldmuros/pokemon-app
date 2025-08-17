@@ -1,4 +1,4 @@
-import type { PokemonData, PokemonStats } from "./types";
+import type { PokemonData, PokemonDataStats } from "./types";
 
 export const pokemonDetailDto = {
   from: (data): PokemonData => {
@@ -12,8 +12,8 @@ export const pokemonDetailDto = {
   }}
 }
 
-const statsDto = (stats): PokemonStats => {
-  const stat = {} as PokemonStats;
+const statsDto = (stats): PokemonDataStats => {
+  const stat = {} as PokemonDataStats;
 
   stats.forEach(statData => {
     switch (statData.stat.name) {

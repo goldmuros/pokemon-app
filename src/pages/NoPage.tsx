@@ -1,4 +1,4 @@
-import { Alert, Box, Button, Stack, Typography } from '@mui/material';
+import { Alert, Box, Button } from '@mui/material';
 import type { ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 
